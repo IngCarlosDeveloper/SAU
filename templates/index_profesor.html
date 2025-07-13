@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal - Docente</title>
+</head>
+<body>
+
+    <h1>Bienvenido {{session['nombre']}}  </h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <td></td>
+                <td>LUNES</td>
+                <td>MARTES</td>
+                <td>MIERCOLES</td>
+                <td>JUEVES</td>
+                <td>VIERNES</td>
+                <td>SABADO</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for hora, conjunto in union %}
+            <tr>
+                <td>{{hora}}</td>
+                {% for bloque in conjunto %}
+                <td>{{bloque}}  </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    
+</body>
+</html>

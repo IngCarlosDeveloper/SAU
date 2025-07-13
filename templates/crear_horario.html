@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+<form action="http://127.0.0.1:5000/guardar_semestre" method="post">
+    <table border="1">
+        <thead>
+            <tr>
+                <td></td>
+                <td>LUNES</td>
+                <td>MARTES</td>
+                <td>MIERCOLES</td>
+                <td>JUEVES</td>
+                <td>VIERNES</td>
+                <td>SABADO</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7:00 a.m. - 7:45 a.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="0,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>7:45 a.m. - 8:30 a.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="1,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>8:30 a.m. - 9:15 a.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="2,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>9:15 a.m. - 10:00 a.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="3,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>10:00 a.m. - 10:45 a.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="4,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>10:45 a.m. - 11:30 a.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="5,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>11:30 a.m. - 12:15 p.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="6,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>1:00 p.m. - 1:45 p.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="7,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>1:45 p.m. - 2:30 p.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="8,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>2:30 p.m. - 3:15 p.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="9,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>3:15 p.m. - 4:00 p.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="10,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>4:00 p.m. - 4:45 p.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="11,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>4:45 p.m. - 5:30 p.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="12,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>5:30 p.m. - 6:15 p.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="13,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>6:15 p.m. - 7:00 p.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="14,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>7:00 p.m. - 7:45 p.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="15,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>7:45 p.m. - 8:30 p.m.</td>
+                {% for numero in columna %}
+                <td>
+                    <select name="16,{{numero}}">
+                        <option value=""></option>
+                        {% for dato in resultado %}
+                        <option value="{{dato[0]}}">{{dato[1]}} {{dato[3]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                {% endfor %}
+            </tr>
+            
+            
+        </tbody>
+    </table>
+    <input type="submit" value="Guardar">
+</form>
+    
+</body>
+</html>

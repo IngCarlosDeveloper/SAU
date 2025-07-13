@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+</head>
+<body>
+    <div>
+        <a href="index.html">Pagina Principal</a>
+    </div>
+    <form action="http://127.0.0.1:5000/numero_semestre" method="get">
+        <label for="n_semestre">
+            Numero de semestre
+        </label>
+        <select name="numero_sem" id="numero_sem">
+            <option value="1">1er Semestre</option>
+            <option value="2">2do Semestre</option>
+            <option value="3">3er Semestre</option>
+            <option value="4">4to Semestre</option>
+            <option value="5">5to Semestre</option>
+            <option value="6">6to Semestre</option>
+            <option value="7">7mo Semestre</option>
+            <option value="8">8vo Semestre</option>
+        </select>
+        <select name="carrera" id="carrera">
+            <option value="1">Ing. Sistemas</option>
+            <option value="2">Ing. Civil</option>
+            <option value="3">Ing. Mecanica</option>
+            <option value="4">Ing. Aeronautica</option>
+            <option value="5">Ing. Electrica</option>
+            <option value="6">Ing. Electronica</option>
+            <option value="7">Ing. Telecom</option>
+        </select>
+
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>

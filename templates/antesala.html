@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bienvenido</h1>
+
+cedula    {{session['cedula']}} <br>
+nombre    {{session['nombre']}} <br>
+jerarquia    {{session['jerarquia']}} <br>
+id_user    {{session['id_usuario']}} <br>
+id_docente    {{session['ID_Docente']}} <br>
+
+{% if session['jerarquia'] == "3" %}
+    <a href="http://127.0.0.1:5000/index">Coordinador</a>
+{% endif %}
+
+{% if session['jerarquia'] == "1" %}
+    <a href="http://127.0.0.1:5500/templates/estudiantes.html">Estudiante</a>
+{% endif %}
+
+{% if session['jerarquia'] == "2" %}
+    <a href="http://127.0.0.1:5000/index_profesor">Profesor</a>
+{% endif %}
+
+    <a href="http://127.0.0.1:5000/salir">Cerrar sesión</a>
+
+</body>
+</html>

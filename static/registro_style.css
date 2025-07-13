@@ -1,0 +1,78 @@
+body{
+    background: linear-gradient(120deg, #000000, #404040, #1C006B);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="cedula"],
+input[type="apellido"],
+input[type="date"]{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    background: #1C006B;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.imglogo{
+    margin-top: -1em;
+    margin-left: 7em;
+    max-width: 100px;
+    height: 100x;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+
+.container h1{
+    font-size: 22px;
+    text-align: center;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid silver;
+}
+
+.listongo{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.listongo a{
+    color: blue;
+    text-decoration: none;
+}
+
+.listongo a:hover{
+    text-decoration: underline;
+}

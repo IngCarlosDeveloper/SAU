@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinador - Secciones</title>
+</head>
+<body>
+    <div>
+        <a href="../index.html">Pagina Principal</a>
+    </div>
+
+    <form action="http://127.0.0.1:5000/insertar_seccion" method="post">
+        <label>Número de semestre:
+            <input type="number" name="Semestre" id="Semestre">
+        </label>
+        <br>
+        <label>Carrera:
+            <input type="text" name="Carrera" id="Carrera">
+        </label>
+        <br>
+        <label>Turno:
+            <select name="Turno" name="Carrera" id="Turno">
+                <option value="D">Diurno</option>
+                <option value="N">Nocturno</option>
+            </select>
+        </label>
+        <br>
+        <label>Seccion:
+            <input type="number" name="Seccion" id="Seccion">
+        </label>
+        <br>
+        <label>Salon:
+            <input type="number" name="Salon" id="Salon">
+        </label>
+        <input type="submit" value="insertar">
+    </form>
+    <button id="Abrir_Popup">Editar</button>
+    <dialog id="modal">
+
+        <form action="http://127.0.0.1:5000/buscador" method="POST">
+            <label for="Buscador">Buscar: </label>
+            <input type="text" name="Buscador" id="Buscador">
+            <input type="submit" name="Buscar" id="Buscar">
+        </form>
+
+        <button id="Cerrar_Popup">Cerrar</button>
+
+        <table>
+            <thead>
+                <th>Semestre</th>
+                <th>Carrera</th>
+                <th>Turno</th>
+                <th>Seccion</th>
+            </thead>
+            <tbody id="contenido">
+
+            </tbody>
+        </table>
+
+    </dialog>
+
+    <script type="text/javascript" src="../js/modal.js"></script>
+</body>
+</html>
